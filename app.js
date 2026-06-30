@@ -6,17 +6,23 @@
 // ----------------------------
 // Temporary Vocabulary
 // ----------------------------
+let vocabulary = [];
+let deck = null;
 
-const vocabulary = [
-    { hebrew: "שלום", english: "peace" },
-    { hebrew: "בית", english: "house" },
-    { hebrew: "מים", english: "water" },
-    { hebrew: "ילד", english: "child" },
-    { hebrew: "אוכל", english: "food" },
-    { hebrew: "ספר", english: "book" },
-    { hebrew: "אמא", english: "mother" },
-    { hebrew: "אבא", english: "father" }
-];
+async function loadVocabulary() {
+
+    const response = await fetch("data/common500.json");
+
+    if (!response.ok) {
+        throw new Error("Unable to load vocabulary.");
+    }
+
+    vocabulary = await response.json();
+
+    deck = new VocabularyDeck(vocabulary);
+
+    console.log(`Loaded ${deck.size()} words.`);
+}
 
 const deck = new VocabularyDeck(vocabulary);
 
@@ -173,15 +179,32 @@ async function playLoop() {
 // Buttons
 // ----------------------------
 
-startButton.addEventListener("click", () => {
+startButton.addEventListener("click", async () => {
+
+    if (!deck) {
+
+        await loadVocabulary();
+
+    }
 
     if (running) return;
 
     running = true;
     paused = false;
 
-    shuffledWords = shuffle(vocabulary);
-    currentIndex = 0;
+    startButton.disabled = true;
+    pauseButton.disabled = false;
+    stopButton.disabled = false;
+
+    playLoop();
+
+});
+
+    if (running) return;
+
+    running = true;
+    paused = false;
+
 
     startButton.disabled = true;
     pauseButton.disabled = false;
