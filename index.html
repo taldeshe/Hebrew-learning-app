@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hebrew Commute</title>
+
+    <meta name="theme-color" content="#2563eb">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🚗 Hebrew Commute</h1>
+    <p>Practice Hebrew hands-free while you drive.</p>
+</header>
+
+<main>
+
+<section class="card">
+
+    <h2>Session</h2>
+
+    <label>
+        Direction
+        <select id="direction">
+            <option value="he-en">Hebrew → English</option>
+            <option value="en-he">English → Hebrew</option>
+            <option value="mixed">Mixed</option>
+        </select>
+    </label>
+
+    <label>
+        Thinking Time
+        <input
+            id="thinkingTime"
+            type="range"
+            min="2"
+            max="10"
+            value="5">
+        <span id="thinkingValue">5 seconds</span>
+    </label>
+
+    <label>
+        Playback Order
+        <select id="playbackOrder">
+            <option value="random">Random</option>
+            <option value="sequential">Sequential</option>
+        </select>
+    </label>
+
+    <button id="startButton">
+        ▶ Start Commute
+    </button>
+
+</section>
+
+<section class="card">
+
+    <h2>Now Playing</h2>
+
+    <div id="currentWord">
+        Ready
+    </div>
+
+    <button id="pauseButton" disabled>
+        Pause
+    </button>
+
+    <button id="stopButton" disabled>
+        Stop
+    </button>
+
+</section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
