@@ -1,1 +1,1152 @@
-    
+    [
+  {
+    "id": 1,
+    "hebrew": "שלום",
+    "english": "peace/hello"
+  },
+  {
+    "id": 2,
+    "hebrew": "להתראות",
+    "english": "goodbye"
+  },
+  {
+    "id": 3,
+    "hebrew": "כן",
+    "english": "yes"
+  },
+  {
+    "id": 4,
+    "hebrew": "לא",
+    "english": "no"
+  },
+  {
+    "id": 5,
+    "hebrew": "בבקשה",
+    "english": "please"
+  },
+  {
+    "id": 6,
+    "hebrew": "תודה",
+    "english": "thank you"
+  },
+  {
+    "id": 7,
+    "hebrew": "סליחה",
+    "english": "sorry/excuse me"
+  },
+  {
+    "id": 8,
+    "hebrew": "מים",
+    "english": "water"
+  },
+  {
+    "id": 9,
+    "hebrew": "אוכל",
+    "english": "food"
+  },
+  {
+    "id": 10,
+    "hebrew": "בית",
+    "english": "house"
+  },
+  {
+    "id": 11,
+    "hebrew": "איש",
+    "english": "man"
+  },
+  {
+    "id": 12,
+    "hebrew": "אישה",
+    "english": "woman"
+  },
+  {
+    "id": 13,
+    "hebrew": "ילד",
+    "english": "boy"
+  },
+  {
+    "id": 14,
+    "hebrew": "ילדה",
+    "english": "girl"
+  },
+  {
+    "id": 15,
+    "hebrew": "ספר",
+    "english": "book"
+  },
+  {
+    "id": 16,
+    "hebrew": "שולחן",
+    "english": "table"
+  },
+  {
+    "id": 17,
+    "hebrew": "כיסא",
+    "english": "chair"
+  },
+  {
+    "id": 18,
+    "hebrew": "חלון",
+    "english": "window"
+  },
+  {
+    "id": 19,
+    "hebrew": "דלת",
+    "english": "door"
+  },
+  {
+    "id": 20,
+    "hebrew": "עיר",
+    "english": "city"
+  },
+  {
+    "id": 21,
+    "hebrew": "דרך",
+    "english": "road"
+  },
+  {
+    "id": 22,
+    "hebrew": "יום",
+    "english": "day"
+  },
+  {
+    "id": 23,
+    "hebrew": "לילה",
+    "english": "night"
+  },
+  {
+    "id": 24,
+    "hebrew": "זמן",
+    "english": "time"
+  },
+  {
+    "id": 25,
+    "hebrew": "שנה",
+    "english": "year"
+  },
+  {
+    "id": 26,
+    "hebrew": "יד",
+    "english": "hand"
+  },
+  {
+    "id": 27,
+    "hebrew": "עין",
+    "english": "eye"
+  },
+  {
+    "id": 28,
+    "hebrew": "ראש",
+    "english": "head"
+  },
+  {
+    "id": 29,
+    "hebrew": "לב",
+    "english": "heart"
+  },
+  {
+    "id": 30,
+    "hebrew": "בית ספר",
+    "english": "school"
+  },
+  {
+    "id": 31,
+    "hebrew": "מורה",
+    "english": "teacher"
+  },
+  {
+    "id": 32,
+    "hebrew": "תלמיד",
+    "english": "student"
+  },
+  {
+    "id": 33,
+    "hebrew": "חבר",
+    "english": "friend"
+  },
+  {
+    "id": 34,
+    "hebrew": "משפחה",
+    "english": "family"
+  },
+  {
+    "id": 35,
+    "hebrew": "אבא",
+    "english": "father"
+  },
+  {
+    "id": 36,
+    "hebrew": "אמא",
+    "english": "mother"
+  },
+  {
+    "id": 37,
+    "hebrew": "אח",
+    "english": "brother"
+  },
+  {
+    "id": 38,
+    "hebrew": "אחות",
+    "english": "sister"
+  },
+  {
+    "id": 39,
+    "hebrew": "בן",
+    "english": "son"
+  },
+  {
+    "id": 40,
+    "hebrew": "בת",
+    "english": "daughter"
+  },
+  {
+    "id": 41,
+    "hebrew": "גדול",
+    "english": "big"
+  },
+  {
+    "id": 42,
+    "hebrew": "קטן",
+    "english": "small"
+  },
+  {
+    "id": 43,
+    "hebrew": "חם",
+    "english": "hot"
+  },
+  {
+    "id": 44,
+    "hebrew": "קר",
+    "english": "cold"
+  },
+  {
+    "id": 45,
+    "hebrew": "חדש",
+    "english": "new"
+  },
+  {
+    "id": 46,
+    "hebrew": "ישן",
+    "english": "old"
+  },
+  {
+    "id": 47,
+    "hebrew": "טוב",
+    "english": "good"
+  },
+  {
+    "id": 48,
+    "hebrew": "רע",
+    "english": "bad"
+  },
+  {
+    "id": 49,
+    "hebrew": "יפה",
+    "english": "beautiful"
+  },
+  {
+    "id": 50,
+    "hebrew": "מהיר",
+    "english": "fast"
+  },
+  {
+    "id": 51,
+    "hebrew": "לאט",
+    "english": "slow"
+  },
+  {
+    "id": 52,
+    "hebrew": "כאן",
+    "english": "here"
+  },
+  {
+    "id": 53,
+    "hebrew": "שם",
+    "english": "there"
+  },
+  {
+    "id": 54,
+    "hebrew": "מתי",
+    "english": "when"
+  },
+  {
+    "id": 55,
+    "hebrew": "למה",
+    "english": "why"
+  },
+  {
+    "id": 56,
+    "hebrew": "איך",
+    "english": "how"
+  },
+  {
+    "id": 57,
+    "hebrew": "מה",
+    "english": "what"
+  },
+  {
+    "id": 58,
+    "hebrew": "מי",
+    "english": "who"
+  },
+  {
+    "id": 59,
+    "hebrew": "איזה",
+    "english": "which"
+  },
+  {
+    "id": 60,
+    "hebrew": "עם",
+    "english": "with"
+  },
+  {
+    "id": 61,
+    "hebrew": "בלי",
+    "english": "without"
+  },
+  {
+    "id": 62,
+    "hebrew": "על",
+    "english": "on/about"
+  },
+  {
+    "id": 63,
+    "hebrew": "מתחת",
+    "english": "under"
+  },
+  {
+    "id": 64,
+    "hebrew": "לפני",
+    "english": "before"
+  },
+  {
+    "id": 65,
+    "hebrew": "אחרי",
+    "english": "after"
+  },
+  {
+    "id": 66,
+    "hebrew": "בין",
+    "english": "between"
+  },
+  {
+    "id": 67,
+    "hebrew": "עוד",
+    "english": "more"
+  },
+  {
+    "id": 68,
+    "hebrew": "מעט",
+    "english": "few"
+  },
+  {
+    "id": 69,
+    "hebrew": "הרבה",
+    "english": "many"
+  },
+  {
+    "id": 70,
+    "hebrew": "מאוד",
+    "english": "very"
+  },
+  {
+    "id": 71,
+    "hebrew": "יכול",
+    "english": "can"
+  },
+  {
+    "id": 72,
+    "hebrew": "צריך",
+    "english": "need"
+  },
+  {
+    "id": 73,
+    "hebrew": "רוצה",
+    "english": "want"
+  },
+  {
+    "id": 74,
+    "hebrew": "עושה",
+    "english": "do"
+  },
+  {
+    "id": 75,
+    "hebrew": "בא",
+    "english": "come"
+  },
+  {
+    "id": 76,
+    "hebrew": "הולך",
+    "english": "go"
+  },
+  {
+    "id": 77,
+    "hebrew": "נותן",
+    "english": "give"
+  },
+  {
+    "id": 78,
+    "hebrew": "לוקח",
+    "english": "take"
+  },
+  {
+    "id": 79,
+    "hebrew": "אומר",
+    "english": "say"
+  },
+  {
+    "id": 80,
+    "hebrew": "יודע",
+    "english": "know"
+  },
+  {
+    "id": 81,
+    "hebrew": "חושב",
+    "english": "think"
+  },
+  {
+    "id": 82,
+    "hebrew": "רואה",
+    "english": "see"
+  },
+  {
+    "id": 83,
+    "hebrew": "שומע",
+    "english": "hear"
+  },
+  {
+    "id": 84,
+    "hebrew": "אוכל",
+    "english": "eat"
+  },
+  {
+    "id": 85,
+    "hebrew": "שותה",
+    "english": "drink"
+  },
+  {
+    "id": 86,
+    "hebrew": "ישן",
+    "english": "sleep"
+  },
+  {
+    "id": 87,
+    "hebrew": "קם",
+    "english": "wake up"
+  },
+  {
+    "id": 88,
+    "hebrew": "יושב",
+    "english": "sit"
+  },
+  {
+    "id": 89,
+    "hebrew": "עומד",
+    "english": "stand"
+  },
+  {
+    "id": 90,
+    "hebrew": "רץ",
+    "english": "run"
+  },
+  {
+    "id": 91,
+    "hebrew": "משחק",
+    "english": "play"
+  },
+  {
+    "id": 92,
+    "hebrew": "עובד",
+    "english": "work"
+  },
+  {
+    "id": 93,
+    "hebrew": "לומד",
+    "english": "study"
+  },
+  {
+    "id": 94,
+    "hebrew": "כותב",
+    "english": "write"
+  },
+  {
+    "id": 95,
+    "hebrew": "קורא",
+    "english": "read"
+  },
+  {
+    "id": 96,
+    "hebrew": "מדבר",
+    "english": "speak"
+  },
+  {
+    "id": 97,
+    "hebrew": "שואל",
+    "english": "ask"
+  },
+  {
+    "id": 98,
+    "hebrew": "עונה",
+    "english": "answer"
+  },
+  {
+    "id": 99,
+    "hebrew": "פותח",
+    "english": "open"
+  },
+  {
+    "id": 100,
+    "hebrew": "סוגר",
+    "english": "close"
+  },
+  {
+    "id": 101,
+    "hebrew": "קונה",
+    "english": "buy"
+  },
+  {
+    "id": 102,
+    "hebrew": "מוכר",
+    "english": "sell"
+  },
+  {
+    "id": 103,
+    "hebrew": "מביא",
+    "english": "bring"
+  },
+  {
+    "id": 104,
+    "hebrew": "לוקח",
+    "english": "take"
+  },
+  {
+    "id": 105,
+    "hebrew": "נוסע",
+    "english": "travel"
+  },
+  {
+    "id": 106,
+    "hebrew": "גר",
+    "english": "live"
+  },
+  {
+    "id": 107,
+    "hebrew": "אוהב",
+    "english": "love"
+  },
+  {
+    "id": 108,
+    "hebrew": "שונא",
+    "english": "hate"
+  },
+  {
+    "id": 109,
+    "hebrew": "מרגיש",
+    "english": "feel"
+  },
+  {
+    "id": 110,
+    "hebrew": "חושב",
+    "english": "think"
+  },
+  {
+    "id": 111,
+    "hebrew": "קל",
+    "english": "easy"
+  },
+  {
+    "id": 112,
+    "hebrew": "קשה",
+    "english": "hard"
+  },
+  {
+    "id": 113,
+    "hebrew": "ארוך",
+    "english": "long"
+  },
+  {
+    "id": 114,
+    "hebrew": "קצר",
+    "english": "short"
+  },
+  {
+    "id": 115,
+    "hebrew": "גבוה",
+    "english": "tall"
+  },
+  {
+    "id": 116,
+    "hebrew": "נמוך",
+    "english": "short(height)"
+  },
+  {
+    "id": 117,
+    "hebrew": "רחב",
+    "english": "wide"
+  },
+  {
+    "id": 118,
+    "hebrew": "צר",
+    "english": "narrow"
+  },
+  {
+    "id": 119,
+    "hebrew": "נקי",
+    "english": "clean"
+  },
+  {
+    "id": 120,
+    "hebrew": "מלוכלך",
+    "english": "dirty"
+  },
+  {
+    "id": 121,
+    "hebrew": "מלא",
+    "english": "full"
+  },
+  {
+    "id": 122,
+    "hebrew": "ריק",
+    "english": "empty"
+  },
+  {
+    "id": 123,
+    "hebrew": "פתוח",
+    "english": "open"
+  },
+  {
+    "id": 124,
+    "hebrew": "סגור",
+    "english": "closed"
+  },
+  {
+    "id": 125,
+    "hebrew": "שמח",
+    "english": "happy"
+  },
+  {
+    "id": 126,
+    "hebrew": "עצוב",
+    "english": "sad"
+  },
+  {
+    "id": 127,
+    "hebrew": "כועס",
+    "english": "angry"
+  },
+  {
+    "id": 128,
+    "hebrew": "מפחד",
+    "english": "afraid"
+  },
+  {
+    "id": 129,
+    "hebrew": "עייף",
+    "english": "tired"
+  },
+  {
+    "id": 130,
+    "hebrew": "רעב",
+    "english": "hungry"
+  },
+  {
+    "id": 131,
+    "hebrew": "צמא",
+    "english": "thirsty"
+  },
+  {
+    "id": 132,
+    "hebrew": "חולה",
+    "english": "sick"
+  },
+  {
+    "id": 133,
+    "hebrew": "בריא",
+    "english": "healthy"
+  },
+  {
+    "id": 134,
+    "hebrew": "אמת",
+    "english": "truth"
+  },
+  {
+    "id": 135,
+    "hebrew": "שקר",
+    "english": "lie"
+  },
+  {
+    "id": 136,
+    "hebrew": "כסף",
+    "english": "money"
+  },
+  {
+    "id": 137,
+    "hebrew": "עבודה",
+    "english": "work"
+  },
+  {
+    "id": 138,
+    "hebrew": "חנות",
+    "english": "store"
+  },
+  {
+    "id": 139,
+    "hebrew": "שוק",
+    "english": "market"
+  },
+  {
+    "id": 140,
+    "hebrew": "מסעדה",
+    "english": "restaurant"
+  },
+  {
+    "id": 141,
+    "hebrew": "קפה",
+    "english": "coffee"
+  },
+  {
+    "id": 142,
+    "hebrew": "תה",
+    "english": "tea"
+  },
+  {
+    "id": 143,
+    "hebrew": "לחם",
+    "english": "bread"
+  },
+  {
+    "id": 144,
+    "hebrew": "חלב",
+    "english": "milk"
+  },
+  {
+    "id": 145,
+    "hebrew": "ביצה",
+    "english": "egg"
+  },
+  {
+    "id": 146,
+    "hebrew": "אורז",
+    "english": "rice"
+  },
+  {
+    "id": 147,
+    "hebrew": "בשר",
+    "english": "meat"
+  },
+  {
+    "id": 148,
+    "hebrew": "דג",
+    "english": "fish"
+  },
+  {
+    "id": 149,
+    "hebrew": "ירק",
+    "english": "vegetable"
+  },
+  {
+    "id": 150,
+    "hebrew": "פרי",
+    "english": "fruit"
+  },
+  {
+    "id": 151,
+    "hebrew": "תפוח",
+    "english": "apple"
+  },
+  {
+    "id": 152,
+    "hebrew": "בננה",
+    "english": "banana"
+  },
+  {
+    "id": 153,
+    "hebrew": "מים קרים",
+    "english": "cold water"
+  },
+  {
+    "id": 154,
+    "hebrew": "יין",
+    "english": "wine"
+  },
+  {
+    "id": 155,
+    "hebrew": "בירה",
+    "english": "beer"
+  },
+  {
+    "id": 156,
+    "hebrew": "סוכר",
+    "english": "sugar"
+  },
+  {
+    "id": 157,
+    "hebrew": "מלח",
+    "english": "salt"
+  },
+  {
+    "id": 158,
+    "hebrew": "פלפל",
+    "english": "pepper"
+  },
+  {
+    "id": 159,
+    "hebrew": "שמן",
+    "english": "oil"
+  },
+  {
+    "id": 160,
+    "hebrew": "גבינה",
+    "english": "cheese"
+  },
+  {
+    "id": 161,
+    "hebrew": "רחוב",
+    "english": "street"
+  },
+  {
+    "id": 162,
+    "hebrew": "כיכר",
+    "english": "square"
+  },
+  {
+    "id": 163,
+    "hebrew": "תחנה",
+    "english": "station"
+  },
+  {
+    "id": 164,
+    "hebrew": "אוטובוס",
+    "english": "bus"
+  },
+  {
+    "id": 165,
+    "hebrew": "רכבת",
+    "english": "train"
+  },
+  {
+    "id": 166,
+    "hebrew": "מונית",
+    "english": "taxi"
+  },
+  {
+    "id": 167,
+    "hebrew": "שדה תעופה",
+    "english": "airport"
+  },
+  {
+    "id": 168,
+    "hebrew": "מטוס",
+    "english": "airplane"
+  },
+  {
+    "id": 169,
+    "hebrew": "כרטיס",
+    "english": "ticket"
+  },
+  {
+    "id": 170,
+    "hebrew": "מלון",
+    "english": "hotel"
+  },
+  {
+    "id": 171,
+    "hebrew": "חדר",
+    "english": "room"
+  },
+  {
+    "id": 172,
+    "hebrew": "מפתח",
+    "english": "key"
+  },
+  {
+    "id": 173,
+    "hebrew": "מחשב",
+    "english": "computer"
+  },
+  {
+    "id": 174,
+    "hebrew": "טלפון",
+    "english": "phone"
+  },
+  {
+    "id": 175,
+    "hebrew": "מסך",
+    "english": "screen"
+  },
+  {
+    "id": 176,
+    "hebrew": "אינטרנט",
+    "english": "internet"
+  },
+  {
+    "id": 177,
+    "hebrew": "דואר",
+    "english": "mail"
+  },
+  {
+    "id": 178,
+    "hebrew": "הודעה",
+    "english": "message"
+  },
+  {
+    "id": 179,
+    "hebrew": "תמונה",
+    "english": "picture"
+  },
+  {
+    "id": 180,
+    "hebrew": "וידאו",
+    "english": "video"
+  },
+  {
+    "id": 181,
+    "hebrew": "מוזיקה",
+    "english": "music"
+  },
+  {
+    "id": 182,
+    "hebrew": "שיר",
+    "english": "song"
+  },
+  {
+    "id": 183,
+    "hebrew": "סרט",
+    "english": "movie"
+  },
+  {
+    "id": 184,
+    "hebrew": "ספריה",
+    "english": "library"
+  },
+  {
+    "id": 185,
+    "hebrew": "מוזיאון",
+    "english": "museum"
+  },
+  {
+    "id": 186,
+    "hebrew": "פארק",
+    "english": "park"
+  },
+  {
+    "id": 187,
+    "hebrew": "ים",
+    "english": "sea"
+  },
+  {
+    "id": 188,
+    "hebrew": "הר",
+    "english": "mountain"
+  },
+  {
+    "id": 189,
+    "hebrew": "נהר",
+    "english": "river"
+  },
+  {
+    "id": 190,
+    "hebrew": "שמיים",
+    "english": "sky"
+  },
+  {
+    "id": 191,
+    "hebrew": "שמש",
+    "english": "sun"
+  },
+  {
+    "id": 192,
+    "hebrew": "ירח",
+    "english": "moon"
+  },
+  {
+    "id": 193,
+    "hebrew": "כוכב",
+    "english": "star"
+  },
+  {
+    "id": 194,
+    "hebrew": "גשם",
+    "english": "rain"
+  },
+  {
+    "id": 195,
+    "hebrew": "שלג",
+    "english": "snow"
+  },
+  {
+    "id": 196,
+    "hebrew": "רוח",
+    "english": "wind"
+  },
+  {
+    "id": 197,
+    "hebrew": "אש",
+    "english": "fire"
+  },
+  {
+    "id": 198,
+    "hebrew": "אדמה",
+    "english": "earth"
+  },
+  {
+    "id": 199,
+    "hebrew": "אוויר",
+    "english": "air"
+  },
+  {
+    "id": 200,
+    "hebrew": "עולם",
+    "english": "world"
+  },
+  {
+    "id": 201,
+    "hebrew": "מדינה",
+    "english": "country"
+  },
+  {
+    "id": 202,
+    "hebrew": "עיר גדולה",
+    "english": "big city"
+  },
+  {
+    "id": 203,
+    "hebrew": "כפר",
+    "english": "village"
+  },
+  {
+    "id": 204,
+    "hebrew": "אזור",
+    "english": "area"
+  },
+  {
+    "id": 205,
+    "hebrew": "מקום",
+    "english": "place"
+  },
+  {
+    "id": 206,
+    "hebrew": "דרך אחרת",
+    "english": "another way"
+  },
+  {
+    "id": 207,
+    "hebrew": "שאלה",
+    "english": "question"
+  },
+  {
+    "id": 208,
+    "hebrew": "תשובה",
+    "english": "answer"
+  },
+  {
+    "id": 209,
+    "hebrew": "רעיון",
+    "english": "idea"
+  },
+  {
+    "id": 210,
+    "hebrew": "סיפור",
+    "english": "story"
+  },
+  {
+    "id": 211,
+    "hebrew": "בעיה",
+    "english": "problem"
+  },
+  {
+    "id": 212,
+    "hebrew": "פתרון",
+    "english": "solution"
+  },
+  {
+    "id": 213,
+    "hebrew": "אפשרות",
+    "english": "option"
+  },
+  {
+    "id": 214,
+    "hebrew": "הזדמנות",
+    "english": "opportunity"
+  },
+  {
+    "id": 215,
+    "hebrew": "עזרה",
+    "english": "help"
+  },
+  {
+    "id": 216,
+    "hebrew": "סיוע",
+    "english": "assistance"
+  },
+  {
+    "id": 217,
+    "hebrew": "תחום",
+    "english": "field"
+  },
+  {
+    "id": 218,
+    "hebrew": "חוק",
+    "english": "law"
+  },
+  {
+    "id": 219,
+    "hebrew": "סדר",
+    "english": "order"
+  },
+  {
+    "id": 220,
+    "hebrew": "מקרה",
+    "english": "case"
+  },
+  {
+    "id": 221,
+    "hebrew": "דוגמה",
+    "english": "example"
+  },
+  {
+    "id": 222,
+    "hebrew": "סיבה",
+    "english": "reason"
+  },
+  {
+    "id": 223,
+    "hebrew": "תוצאה",
+    "english": "result"
+  },
+  {
+    "id": 224,
+    "hebrew": "תוכנית",
+    "english": "plan"
+  },
+  {
+    "id": 225,
+    "hebrew": "מטרה",
+    "english": "goal"
+  },
+  {
+    "id": 226,
+    "hebrew": "התחלה",
+    "english": "beginning"
+  },
+  {
+    "id": 227,
+    "hebrew": "סוף",
+    "english": "end"
+  },
+  {
+    "id": 228,
+    "hebrew": "אמצע",
+    "english": "middle"
+  },
+  {
+    "id": 229,
+    "hebrew": "פעם",
+    "english": "once"
+  },
+  {
+    "id": 230,
+    "hebrew": "תמיד",
+    "english": "always"
+  }
+]
