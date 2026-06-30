@@ -147,15 +147,20 @@ async function playLoop() {
 
         currentWord.textContent = prompt;
 
-        await speak(prompt, promptLanguage);
-
+        await player.speak(
+    prompt,
+    promptLanguage.startsWith("he") ? "he" : "en"
+);
         await sleep(Number(thinkingSlider.value) * 1000);
 
         if (!running) break;
 
         currentWord.textContent = answer;
 
-        await speak(answer, answerLanguage);
+       await player.speak(
+    answer,
+    answerLanguage.startsWith("he") ? "he" : "en"
+);
 
         await sleep(2000);
 
@@ -201,7 +206,7 @@ stopButton.addEventListener("click", () => {
 
     clearTimeout(timeoutId);
 
-    speechSynthesis.cancel();
+    player.stop();
 
     startButton.disabled = false;
     pauseButton.disabled = true;
