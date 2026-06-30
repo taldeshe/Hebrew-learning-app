@@ -18,6 +18,8 @@ const vocabulary = [
     { hebrew: "אבא", english: "father" }
 ];
 
+const deck = new VocabularyDeck(vocabulary);
+
 // ----------------------------
 // UI Elements
 // ----------------------------
@@ -42,8 +44,6 @@ let paused = false;
 
 let timeoutId = null;
 
-let shuffledWords = [];
-let currentIndex = 0;
 
 // ----------------------------
 // Utility Functions
@@ -79,34 +79,6 @@ function speak(text, lang = "en-US") {
 
 }
 
-function shuffle(array) {
-
-    const arr = [...array];
-
-    for (let i = arr.length - 1; i > 0; i--) {
-
-        const j = Math.floor(Math.random() * (i + 1));
-
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-
-    return arr;
-}
-
-function getNextWord() {
-
-    if (orderSelect.value === "random") {
-
-        return vocabulary[Math.floor(Math.random() * vocabulary.length)];
-
-    }
-
-    if (currentIndex >= shuffledWords.length) {
-        currentIndex = 0;
-    }
-
-    return shuffledWords[currentIndex++];
-}
 
 // ----------------------------
 // Playback Loop
@@ -122,7 +94,7 @@ async function playLoop() {
 
         if (!running) break;
 
-        const word = getNextWord();
+        const word = deck.next();
 
         const direction = directionSelect.value;
 
