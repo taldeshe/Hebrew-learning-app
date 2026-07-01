@@ -185,19 +185,6 @@ startButton.addEventListener("click", async () => {
 
     }
 
-    if (running) return;
-
-    running = true;
-    paused = false;
-
-    startButton.disabled = true;
-    pauseButton.disabled = false;
-    stopButton.disabled = false;
-
-    playLoop();
-
-});
-
 pauseButton.addEventListener("click", () => {
 
     paused = !paused;
