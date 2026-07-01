@@ -1,35 +1,19 @@
 // =====================================================
 // Hebrew Commute
-// Version 0.1
+// app.js
 // =====================================================
 
 // ----------------------------
-// Temporary Vocabulary
+// Vocabulary
 // ----------------------------
-let vocabulary = [];
+
 let deck = null;
 
-async function loadVocabulary() {
-
-    const response = await fetch("data/common500.json");
-
-    if (!response.ok) {
-        throw new Error("Unable to load vocabulary.");
-    }
-
-    vocabulary = await response.json();
-
-    deck = new VocabularyDeck(vocabulary);
-
-    console.log(`Loaded ${deck.size()} words.`);
-}
-
 // ----------------------------
-// UI Elements
+// UI
 // ----------------------------
 
 const directionSelect = document.getElementById("direction");
-const orderSelect = document.getElementById("playbackOrder");
 const thinkingSlider = document.getElementById("thinkingTime");
 const thinkingValue = document.getElementById("thinkingValue");
 
@@ -45,12 +29,30 @@ const currentWord = document.getElementById("currentWord");
 
 let running = false;
 let paused = false;
-
 let timeoutId = null;
 
+// ----------------------------
+// Load vocabulary
+// ----------------------------
+
+async function loadVocabulary() {
+
+    const response = await fetch("data/common500.json");
+
+    if (!response.ok) {
+        alert("Couldn't load vocabulary.");
+        return;
+    }
+
+    const words = await response.json();
+
+    deck = new VocabularyDeck(words);
+
+    console.log(`Loaded ${deck.size()} words.`);
+}
 
 // ----------------------------
-// Utility Functions
+// Helpers
 // ----------------------------
 
 thinkingSlider.addEventListener("input", () => {
@@ -63,29 +65,8 @@ function sleep(ms) {
     });
 }
 
-function speak(text, lang = "en-US") {
-
-    return new Promise(resolve => {
-
-        speechSynthesis.cancel();
-
-        const utterance = new SpeechSynthesisUtterance(text);
-
-        utterance.lang = lang;
-
-        utterance.rate = 0.9;
-
-        utterance.onend = resolve;
-
-        speechSynthesis.speak(utterance);
-
-    });
-
-}
-
-
 // ----------------------------
-// Playback Loop
+// Playback
 // ----------------------------
 
 async function playLoop() {
@@ -100,73 +81,69 @@ async function playLoop() {
 
         const word = deck.next();
 
-        const direction = directionSelect.value;
+        if (!word) break;
 
         let prompt;
         let answer;
-        let promptLanguage;
-        let answerLanguage;
+        let promptLang;
+        let answerLang;
 
-        if (direction === "he-en") {
+        switch (directionSelect.value) {
 
-            prompt = word.hebrew;
-            answer = word.english;
-
-            promptLanguage = "he-IL";
-            answerLanguage = "en-US";
-
-        }
-        else if (direction === "en-he") {
-
-            prompt = word.english;
-            answer = word.hebrew;
-
-            promptLanguage = "en-US";
-            answerLanguage = "he-IL";
-
-        }
-        else {
-
-            const flip = Math.random() < 0.5;
-
-            if (flip) {
-
-                prompt = word.hebrew;
-                answer = word.english;
-
-                promptLanguage = "he-IL";
-                answerLanguage = "en-US";
-
-            } else {
+            case "en-he":
 
                 prompt = word.english;
                 answer = word.hebrew;
 
-                promptLanguage = "en-US";
-                answerLanguage = "he-IL";
+                promptLang = "en";
+                answerLang = "he";
 
-            }
+                break;
 
+            case "mixed":
+
+                if (Math.random() < 0.5) {
+
+                    prompt = word.hebrew;
+                    answer = word.english;
+
+                    promptLang = "he";
+                    answerLang = "en";
+
+                } else {
+
+                    prompt = word.english;
+                    answer = word.hebrew;
+
+                    promptLang = "en";
+                    answerLang = "he";
+
+                }
+
+                break;
+
+            default:
+
+                prompt = word.hebrew;
+                answer = word.english;
+
+                promptLang = "he";
+                answerLang = "en";
         }
 
         currentWord.textContent = prompt;
 
-        await player.speak(
-    prompt,
-    promptLanguage.startsWith("he") ? "he" : "en"
-);
+        await player.speak(prompt, promptLang);
+
         await sleep(Number(thinkingSlider.value) * 1000);
 
         if (!running) break;
 
         currentWord.textContent = answer;
 
-       await player.speak(
-    answer,
-    answerLanguage.startsWith("he") ? "he" : "en"
-);
+        await player.speak(answer, answerLang);
 
-        await sleep(2000);
+        await sleep(1500);
 
     }
 
@@ -179,11 +156,22 @@ async function playLoop() {
 
 startButton.addEventListener("click", async () => {
 
+    if (running) return;
+
     if (!deck) {
-
         await loadVocabulary();
-
     }
+
+    running = true;
+    paused = false;
+
+    startButton.disabled = true;
+    pauseButton.disabled = false;
+    stopButton.disabled = false;
+
+    playLoop();
+
+});
 
 pauseButton.addEventListener("click", () => {
 
@@ -207,5 +195,7 @@ stopButton.addEventListener("click", () => {
     stopButton.disabled = true;
 
     pauseButton.textContent = "Pause";
+
+    currentWord.textContent = "Ready";
 
 });
