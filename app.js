@@ -24,8 +24,6 @@ async function loadVocabulary() {
     console.log(`Loaded ${deck.size()} words.`);
 }
 
-const deck = new VocabularyDeck(vocabulary);
-
 // ----------------------------
 // UI Elements
 // ----------------------------
